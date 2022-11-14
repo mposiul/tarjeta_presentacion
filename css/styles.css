@@ -1,0 +1,86 @@
+:root {
+    --primary-theme-color: #20232a;
+    --primary-shadow-color: #20232abf;
+    --secundary-shadow-color: #282c34bf;
+    --primary-text-color: #fff;
+    --primary-highlight-color: #61dafb;
+    --primary-font-family: monospace;
+}
+
+.body {
+    background-color: var(--primary-shadow-color);
+    color: var(--primary-text-color);
+    font-family: var(--primary-font-family);
+    margin: 0;
+}
+
+.hero {
+    display: flex;
+    background-image: url(../img/00110011.webp);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.card {
+    border: 0.125rem solid var(--primary-highlight-color);
+    border-radius: 1rem;
+    max-width: 320px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.card__header {
+    background-color: var(--primary-shadow-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.card__img {
+    background-color: var(--primary-theme-color);
+    border-radius: 50%;
+    width: min(100%, 256px);
+    height: auto;
+    object-fit: cover;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: var(--secundary-shadow-color);
+    padding: 1rem;
+}
+
+.card__title {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0.1rem;
+}
+
+.card__subtitle {
+    font-size: 1.15rem;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.card__text {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.card__footer {
+    background-color: var(--secundary-shadow-color);
+    padding: 1rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
